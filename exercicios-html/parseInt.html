@@ -1,0 +1,22 @@
+<script>
+function pulalinha() {
+	document.write("<br>");
+}
+function mostra(frase) {
+	document.write(frase);
+	pulalinha();
+}
+var vitorias = parseInt(prompt("Quantos jogos o CDC FC venceu?"));
+var empates = parseInt(prompt("Quantos jogos o CDC FC empatou?"));
+var pontos = (vitorias * 3) + empates;
+alert(pontos);
+if (pontos > 28) {
+	mostra("Nosso time está indo melhor que Livros Velhos!");
+}
+if (pontos < 28) {
+	mostra("Nosso time está pior que o Livro Velhos!");
+}
+if (pontos == 28) {
+	mostra ("Nosso time está EMPATADO com Livro Velhos!");
+}
+</script>

@@ -1,0 +1,26 @@
+<script>
+function pulalinha() {
+	document.write ("<br>");
+}
+function mostra (frase) {
+	document.write(frase);
+	pulalinha();
+}
+var vitorias = parseInt (prompt ("Quantos jogos o CDC FC venceu?"));
+var empates = parseInt (prompt ("Quantos jogos o CDC FC empatou?"));
+var pontos = (vitorias * 3) + empates;
+var vitoriasAdversario = parseInt (prompt ("Quantos jogos o Livro Velhos FC venceu?"));
+var empatesAdversario = parseInt (prompt ("Quantos jogos o Livro Velhos FC empatou?"));
+var pontosAdversario = (vitoriasAdversario * 3) + empatesAdversario;
+mostra("Time CDC FC = " + pontos + " pontos!");
+mostra ("Time Livros Velhos = " + pontosAdversario + " pontos!");
+if (pontos > pontosAdversario) {
+	mostra ("CDC FC está MELHOR que o time Livros Velhos!");
+}
+if (pontos < pontosAdversario) {
+	mostra ("CDC FC está PIOR que o time Livros Velhos!");
+}
+if (pontos == pontosAdversario) {
+	mostra ("CDC FC está IGUAL ao time Livros Velhos!");
+}
+</script>

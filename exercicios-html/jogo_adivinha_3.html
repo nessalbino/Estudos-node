@@ -1,0 +1,27 @@
+<script>
+function pulalinha() {
+	document.write('<br>');
+}
+
+function mostra(frase) {
+	document.write(frase);
+	pulalinha();
+}
+
+function sorteia() {
+	return Math.random() *100;
+}
+
+var numeroPensado=Math.round(sorteia(100));
+var chute = prompt("Já pensei. Qual você acha que é?");
+
+if(chute == numeroPensado) {
+	mostra('Uau! Você acertou, pois eu pensei no ' + numeroPensado);
+} else {
+	mostra('Você errou! Eu tinha pensado no ' + numeroPensado);
+}
+
+if(isNaN(chute)) {
+    mostra('Apenas números são válidos.')
+}
+</script>
